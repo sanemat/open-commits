@@ -1,2 +1,2 @@
 // Copy this to your URL bar:
-javascript:!function(){var o=[].slice.call(document.querySelectorAll("div[id^=commits-pushed] .commit-message a"),0),t=o.map(function(o){return o.getAttribute("href")});t.map(function(o){window.open(window.location.protocol+"//"+window.location.host+o)})}();
+javascript:!function(){var e=[].slice.call(document.querySelectorAll("div[id^=commits-pushed] .commit-message a"),0),t=e.map(function(e){return e.getAttribute("href")});t.map(function(e){window.open(e)})}();
