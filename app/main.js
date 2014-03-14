@@ -1,8 +1,6 @@
 /*jshint strict:false, browser:true */
 (function bookmarklet() {
-  var styleNode = document.createElement('style'),
-    content = document.createTextNode('body { background: cornflowerblue; }');
-
-  styleNode.appendChild(content);
-  document.head.appendChild(styleNode);
+  var elArray = [].slice.call(document.querySelectorAll('div[id^=commits-pushed] .commit-message a'), 0);
+  var urls = elArray.map(function(el) { return el.getAttribute('href');});
+  urls.map(function(el) { window.open(window.location.protocol + "//" + window.location.host + el); });
 }());

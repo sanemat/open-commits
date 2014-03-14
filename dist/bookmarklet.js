@@ -1,2 +1,2 @@
 // Copy this to your URL bar:
-javascript:!function(){var e=document.createElement("style"),d=document.createTextNode("body { background: cornflowerblue; }");e.appendChild(d),document.head.appendChild(e)}();
+javascript:!function(){var o=[].slice.call(document.querySelectorAll("div[id^=commits-pushed] .commit-message a"),0),t=o.map(function(o){return o.getAttribute("href")});t.map(function(o){window.open(window.location.protocol+"//"+window.location.host+o)})}();
