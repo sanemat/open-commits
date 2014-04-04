@@ -1,2 +1,2 @@
 // Copy this to your URL bar:
-javascript:!function(){var e=[].slice.call(document.querySelectorAll("div[id^=commits-pushed] .commit-message a"),0),t=e.map(function(e){return e.getAttribute("href")});t.map(function(e){window.open(e)})}();
+javascript:!function(){function e(e){var t="message";return e.classList?e.classList.contains(t):new RegExp("(^| )"+t+"( |$)","gi").test(e.className)}var t=[].slice.call(document.querySelectorAll("div[id^=commits-pushed] .commit-message a"),0),s=Array.prototype.filter.call(t,e),i=s.map(function(e){return e.getAttribute("href")});i.map(function(e){window.open(e)})}();
